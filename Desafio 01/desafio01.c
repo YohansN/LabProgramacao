@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int binario(int x){
     return (x == 0) ? 0: (binario (x / 2) * 10) | (x % 2); //Transforma número decimal em binario.
@@ -11,6 +12,7 @@ int main()
 {
     unsigned char armario = 0; //00000000
     int opcao, j, libera, numArmario[8] = {1,2,3,4,5,6,7,8};
+    srand(time(NULL));
     
     do{
         puts("Digite uma das tres opcoes:\n[1]Ocupar armario.\n[2]Liberar armario.\n[3]Sair.");
