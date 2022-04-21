@@ -12,7 +12,7 @@ int main()
         puts("Digite um valor: ");
         scanf("%f",&n);
         
-        while(!primeiraLeitura){
+        if(!primeiraLeitura){
             maiorValor = n;
             menorValor = n;
             primeiraLeitura = true;
