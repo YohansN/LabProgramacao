@@ -4,7 +4,7 @@ O tipo de retorno dessa funcao deve ser void. */
 
 #include <stdio.h>
 
-float mediaZ(int *x, int *y, float *z){
+void mediaZ(int *x, int *y, float *z){
     *z = (*x + *y) / 2;
 }
 
